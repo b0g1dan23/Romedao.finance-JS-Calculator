@@ -1,0 +1,3 @@
+Plans:
+Connecting app with API to get real time prices for ROME
+Connecting app with MetaMask to get real ROME balance.

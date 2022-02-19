@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <h1>Calculator</h1>
+        <h3>Estimate your returns</h3>
+        <div class="currents">
+          <div class="block">
+            <h2>Current ROME Price</h2>
+            <h1>$<span class="RomePrice">41.69</span></h1>
+          </div>
+          <div class="block">
+            <h2>Current Reward Yield</h2>
+            <h1><span class="APY">101,411.35</span>%</h1>
+          </div>
+          <div class="block">
+            <h2>Staking rebase</h2>
+            <h1><span class="rebase">0.61</span>%</h1>
+          </div>
+          <div class="block">
+            <h2>Your balance</h2>
+            <h1><span class="Balance">0.69</span> ROME</h1>
+          </div>
+        </div>
+        <div class="slider">
+          <input
+            type="range"
+            name="slider"
+            class="slider-values"
+            min="1"
+            max="365"
+            value="1"
+            step="1"
+            onmousemove="getValue(this.value)"
+            onchange="getValue(this.value)"
+          />
+          <label for="slider" class="days">1 Days</label>
+        </div>
+        <div class="main">
+          <div class="text-boxes">
+            <span>Investment</span>
+            <span>ROME Rewards</span>
+            <span>Potential return</span>
+          </div>
+          <div class="calculations">
+            <span class="Investment">$xx.xx</span>
+            <span class="Rewards">x.xx ROME</span>
+            <span class="Return">$xx.xx</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="server.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
